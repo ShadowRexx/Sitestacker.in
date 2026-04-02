@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Sitestacker – Turn Your Instagram Store Into a Professional Website</title>
+<title>Sitestacker – Get Your Own Website for Your Instagram Store</title>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Cabinet+Grotesk:wght@400;500;700;800;900&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap" rel="stylesheet" />
@@ -174,12 +174,50 @@
   @media (max-width: 640px) {
     .phone-mockup { width: 220px !important; height: 440px !important; border-radius: 32px; }
   }
+  .urgency-bar {
+    background: linear-gradient(90deg, #0F1117 0%, #1a2332 100%);
+    color: #fff;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 9px 16px;
+    letter-spacing: 0.01em;
+  }
+  .urgency-bar span { color: #25D366; }
+  .why-card {
+    background: #fff;
+    border-radius: 20px;
+    border: 1px solid rgba(15,17,23,0.07);
+    padding: 28px 24px;
+    display: flex;
+    gap: 18px;
+    align-items: flex-start;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .why-card:hover { transform: translateY(-4px); box-shadow: 0 16px 40px rgba(15,17,23,0.09); }
+  .why-icon {
+    width: 48px; height: 48px; border-radius: 14px;
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+  }
+  .demo-label {
+    background: rgba(37,211,102,0.12);
+    border: 1px solid rgba(37,211,102,0.3);
+    border-radius: 12px;
+    padding: 14px 20px;
+    margin-bottom: 20px;
+  }
 </style>
 </head>
 <body>
 
+<!-- URGENCY BAR -->
+<div class="urgency-bar fixed top-0 left-0 right-0 z-50">
+  ⚡ <span>Limited slots available this week</span> — We're taking new website orders. DM now to secure yours.
+</div>
+
 <!-- NAV -->
-<nav class="nav-blur fixed top-0 left-0 right-0 z-50">
+<nav class="nav-blur fixed top-[42px] left-0 right-0 z-50">
   <div class="max-w-6xl mx-auto px-5 py-4 flex items-center justify-between">
     <div class="flex items-center gap-2">
       <div class="w-8 h-8 rounded-xl bg-brand-ink flex items-center justify-center">
@@ -188,8 +226,9 @@
       <span class="font-display font-800 text-brand-ink text-lg tracking-tight">Sitestacker</span>
     </div>
     <div class="hidden md:flex items-center gap-8 text-sm font-medium text-brand-muted">
+      <a href="#why" class="hover:text-brand-ink transition-colors">Why Sitestacker</a>
       <a href="#how" class="hover:text-brand-ink transition-colors">How it works</a>
-      <a href="#features" class="hover:text-brand-ink transition-colors">Features</a>
+      <a href="https://shadowrexx.github.io/Demo/" class="hover:text-brand-ink transition-colors">Demo</a>
       <a href="#pricing" class="hover:text-brand-ink transition-colors">Pricing</a>
     </div>
     <a href="https://wa.me/918433080066?text=Hi%20I%20want%20to%20get%20my%20website%20from%20Sitestacker" target="_blank"
@@ -201,7 +240,7 @@
 </nav>
 
 <!-- HERO -->
-<section class="hero-bg pt-28 pb-16 px-5 relative overflow-hidden">
+<section class="hero-bg pt-36 pb-16 px-5 relative overflow-hidden">
   <div class="max-w-6xl mx-auto">
     <div class="flex flex-col lg:flex-row items-center gap-12">
       <!-- Text -->
@@ -211,30 +250,33 @@
           Now live — websites in 24 hours
         </div>
         <h1 class="font-display font-900 text-[2.6rem] sm:text-5xl lg:text-6xl leading-[1.1] text-brand-ink mb-5">
-          Turn Your Instagram Store Into a <span class="gradient-text">Professional Website</span>
+          Get Your Own Website for Your <span class="gradient-text">Instagram Store</span>
         </h1>
-        <p class="text-brand-muted text-lg sm:text-xl leading-relaxed mb-8 max-w-lg mx-auto lg:mx-0">
-          Get your own website in 24 hours — with a full product catalog and <strong class="text-brand-ink">WhatsApp ordering</strong> so customers buy directly.
+        <p class="text-brand-muted text-lg sm:text-xl leading-relaxed mb-3 max-w-lg mx-auto lg:mx-0">
+          Let customers browse your products and order easily on <strong class="text-brand-ink">WhatsApp</strong> — all from your own professional website.
+        </p>
+        <p class="text-brand-green font-semibold text-sm mb-8 mx-auto lg:mx-0">
+          ✦ Perfect for Instagram &amp; WhatsApp sellers
         </p>
         <div class="flex flex-col sm:flex-row gap-3 justify-center lg:justify-start">
           <a href="https://shadowrexx.github.io/Demo/" class="bg-brand-ink text-white font-semibold text-base px-7 py-3.5 rounded-xl hover:bg-gray-900 transition-colors flex items-center justify-center gap-2">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polygon points="5 3 19 12 5 21 5 3"/></svg>
             View Demo
           </a>
-          <a href="https://wa.me/918433080066?text=Hi%20I%20want%20to%20get%20my%20website%20from%20sitestacker" target="_blank"
+          <a href="https://wa.me/918433080066?text=Hi%20I%20want%20to%20get%20my%20website%20from%20Sitestacker" target="_blank"
              class="bg-brand-green text-white font-semibold text-base px-7 py-3.5 rounded-xl hover:bg-brand-darkgreen transition-colors flex items-center justify-center gap-2">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
-            DM Us on WhatsApp
+            DM on WhatsApp
           </a>
         </div>
-        <div class="mt-8 flex items-center gap-6 justify-center lg:justify-start text-sm text-brand-muted">
+        <div class="mt-8 flex flex-wrap items-center gap-4 justify-center lg:justify-start text-sm text-brand-muted">
           <div class="flex items-center gap-1.5">
             <svg class="text-brand-green" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-            No technical knowledge needed
+            Just send your products, we handle everything
           </div>
           <div class="flex items-center gap-1.5">
             <svg class="text-brand-green" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-            Ready in 24 hours
+            No technical knowledge needed
           </div>
         </div>
       </div>
@@ -334,6 +376,63 @@
   </div>
 </section>
 
+<!-- WHY CHOOSE SITESTACK -->
+<section class="py-20 px-5 bg-white" id="why">
+  <div class="max-w-5xl mx-auto">
+    <div class="text-center mb-12 reveal">
+      <div class="tag mb-4 mx-auto w-fit">Why Sitestacker</div>
+      <h2 class="font-display font-800 text-4xl sm:text-5xl text-brand-ink mb-3">Why Choose <span class="gradient-text">Sitestacker</span></h2>
+      <p class="text-brand-muted text-lg max-w-xl mx-auto">Built specifically for Instagram sellers. Not generic website builders.</p>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+      <!-- Card 1 -->
+      <div class="why-card reveal">
+        <div class="why-icon bg-green-50">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#25D366" stroke-width="2.2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        </div>
+        <div>
+          <h3 class="font-display font-700 text-lg text-brand-ink mb-1">Website Ready in 24 Hours</h3>
+          <p class="text-brand-muted text-sm leading-relaxed">Send us your products today — your professional website will be live before tomorrow. No waiting weeks.</p>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="why-card reveal" style="transition-delay:0.08s">
+        <div class="why-icon bg-pink-50">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#e91e8c" stroke-width="2.2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        </div>
+        <div>
+          <h3 class="font-display font-700 text-lg text-brand-ink mb-1">Designed for Instagram Sellers</h3>
+          <p class="text-brand-muted text-sm leading-relaxed">We understand your audience. Your website will feel familiar to your Instagram followers and convert them into buyers.</p>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="why-card reveal" style="transition-delay:0.16s">
+        <div class="why-icon bg-blue-50">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="2.2"><path d="M12 2a10 10 0 1 0 10 10"/><path d="M12 8v4l3 3"/><path d="M18 2v4h4"/></svg>
+        </div>
+        <div>
+          <h3 class="font-display font-700 text-lg text-brand-ink mb-1">No Technical Knowledge Needed</h3>
+          <p class="text-brand-muted text-sm leading-relaxed">You don't need to know anything about websites, coding, or hosting. Just share your products — we do everything else.</p>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="why-card reveal" style="transition-delay:0.24s">
+        <div class="why-icon bg-orange-50">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#FF6B35" stroke-width="2.2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <div>
+          <h3 class="font-display font-700 text-lg text-brand-ink mb-1">Full Support After Delivery</h3>
+          <p class="text-brand-muted text-sm leading-relaxed">Got questions after your website goes live? We're on WhatsApp to help you — no ticket system, just real people.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- PROBLEM SECTION -->
 <section class="py-20 px-5 bg-brand-soft" id="problem">
   <div class="max-w-5xl mx-auto">
@@ -415,11 +514,14 @@
 <section class="py-20 px-5 bg-brand-ink" id="demo">
   <div class="max-w-5xl mx-auto text-center">
     <div class="reveal">
-      <div class="inline-flex items-center gap-2 bg-white/10 text-white text-sm font-semibold px-4 py-2 rounded-full mb-6 border border-white/20">
-        🎨 See a real store in action
+      <div class="inline-flex items-center gap-2 bg-white/10 text-white text-sm font-semibold px-4 py-2 rounded-full mb-4 border border-white/20">
+        🎨 Real example — not a mockup
       </div>
-      <h2 class="font-display font-800 text-4xl sm:text-5xl text-white mb-4">What your website will look like</h2>
-      <p class="text-gray-400 text-lg mb-12 max-w-xl mx-auto">Clean, fast, mobile-first. Customers love it. Orders increase.</p>
+      <h2 class="font-display font-800 text-4xl sm:text-5xl text-white mb-3">See what your website will look like</h2>
+      <div class="demo-label inline-block mb-4">
+        <p class="text-brand-green font-semibold text-sm">👆 This is a live demo of a clothing store website we can build for you</p>
+      </div>
+      <p class="text-gray-400 text-base mb-10">Click the button below to experience it yourself — browse products, see how WhatsApp ordering works.</p>
     </div>
 
     <div class="relative reveal">
@@ -455,11 +557,12 @@
     </div>
 
     <div class="mt-10 reveal">
-      <a href="https://shadowrexx.github.io/Demo/" target="_blank"
+      <a href="https://wa.me/918433080066?text=Hi%20I%20want%20to%20see%20the%20live%20demo%20of%20Sitestacker" target="_blank"
          class="inline-flex items-center gap-2 bg-white text-brand-ink font-semibold px-8 py-4 rounded-xl hover:bg-gray-100 transition-colors text-base">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polygon points="5 3 19 12 5 21 5 3"/></svg>
         View Live Demo
       </a>
+      <p class="text-gray-500 text-sm mt-3">Click above to experience it ↑</p>
     </div>
   </div>
 </section>
@@ -540,26 +643,60 @@
     </div>
 
     <div class="text-center mt-12 reveal">
-      <a href="https://wa.me/918433080066?text=Hi%20I%20want%20to%20get%20my%20website%20from%20sitestacker" target="_blank"
+      <p class="text-brand-muted text-sm mb-4">Just send your products — we handle everything else</p>
+      <a href="https://wa.me/918433080066?text=Hi%20I%20want%20to%20get%20my%20website%20from%20Sitestacker" target="_blank"
          class="inline-flex items-center gap-2 bg-brand-green text-white font-semibold px-8 py-4 rounded-xl hover:bg-brand-darkgreen transition-colors text-base shadow-lg shadow-green-200">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
         Start Today — It's Easy
       </a>
+      <p class="text-brand-muted text-xs mt-3 font-medium">⚡ Limited slots available this week</p>
     </div>
   </div>
 </section>
 
 <!-- PRICING -->
 <section class="py-20 px-5 bg-brand-soft" id="pricing">
-  <div class="max-w-4xl mx-auto">
-    <div class="text-center mb-14 reveal">
-      <div class="tag mb-4 mx-auto w-fit">🔥 Limited Time Offer</div>
-      <h2 class="font-display font-800 text-4xl sm:text-5xl text-brand-ink mb-4">Simple, honest pricing</h2>
-      <p class="text-brand-muted text-lg">No hidden charges. No monthly fees. One-time payment.</p>
+  <div class="max-w-3xl mx-auto">
+    <div class="text-center mb-10 reveal">
+      <div class="tag mb-4 mx-auto w-fit">Simple Pricing</div>
+      <h2 class="font-display font-800 text-4xl sm:text-5xl text-brand-ink mb-4">Simple Pricing</h2>
+      <p class="text-brand-muted text-lg max-w-lg mx-auto">Pricing depends on your needs. DM us for a quick quote — usually takes 2 minutes.</p>
     </div>
 
+    <!-- Main pricing card -->
+    <div class="price-card p-10 reveal text-center">
+      <div class="text-5xl mb-5">💬</div>
+      <h3 class="font-display font-800 text-3xl text-white mb-3">DM us for a quick quote</h3>
+      <p class="text-gray-400 text-base mb-2 max-w-md mx-auto">Tell us what you sell and how many products you have — we'll give you an honest price instantly.</p>
+      <p class="text-brand-green font-semibold text-sm mb-8">One-time payment. No monthly charges. No surprises.</p>
 
-    <p class="text-center text-sm text-brand-muted mt-8 reveal">🔒 Secure payment via UPI · 100% satisfaction or your money back</p>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-10">
+        <div class="bg-white/10 rounded-2xl p-5 border border-white/10">
+          <div class="text-2xl mb-2">⚡</div>
+          <div class="text-white font-semibold text-sm mb-1">Fast Quote</div>
+          <div class="text-gray-400 text-xs">Reply within 30 minutes</div>
+        </div>
+        <div class="bg-white/10 rounded-2xl p-5 border border-white/10">
+          <div class="text-2xl mb-2">🎯</div>
+          <div class="text-white font-semibold text-sm mb-1">Fair Price</div>
+          <div class="text-gray-400 text-xs">Based on your actual needs</div>
+        </div>
+        <div class="bg-white/10 rounded-2xl p-5 border border-white/10">
+          <div class="text-2xl mb-2">🔒</div>
+          <div class="text-white font-semibold text-sm mb-1">One-Time Only</div>
+          <div class="text-gray-400 text-xs">No monthly fees, ever</div>
+        </div>
+      </div>
+
+      <a href="https://wa.me/918433080066?text=Hi%2C%20I%20want%20a%20quick%20quote%20for%20my%20website" target="_blank"
+         class="inline-flex items-center gap-3 bg-brand-green text-white font-bold px-9 py-4 rounded-xl hover:bg-brand-darkgreen transition-colors text-base shadow-lg shadow-green-900/30">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+        Get a Quick Quote
+      </a>
+      <p class="text-gray-500 text-xs mt-4">Usually responds in under 30 minutes · Mon–Sat 9am–9pm</p>
+    </div>
+
+    <p class="text-center text-sm text-brand-muted mt-6 reveal">🔒 Secure payment via UPI · Satisfaction guaranteed</p>
   </div>
 </section>
 
@@ -568,7 +705,7 @@
   <div class="max-w-5xl mx-auto">
     <div class="text-center mb-14 reveal">
       <div class="tag mb-4 mx-auto w-fit">Real Stories</div>
-      <h2 class="font-display font-800 text-4xl sm:text-5xl text-brand-ink mb-4">Sellers love sitestacker</h2>
+      <h2 class="font-display font-800 text-4xl sm:text-5xl text-brand-ink mb-4">Sellers love Sitestacker</h2>
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
@@ -586,7 +723,7 @@
 
       <div class="testimonial-card p-7 card-hover reveal" style="transition-delay:0.1s">
         <div class="flex text-yellow-400 mb-4 text-sm">★★★★★</div>
-        <p class="text-brand-ink text-sm leading-relaxed mb-5">"I was scared I'd need coding knowledge. But Sitestack built everything! My website was ready in less than a day. Customers trust me more now. Best ₹999 I spent!"</p>
+        <p class="text-brand-ink text-sm leading-relaxed mb-5">"I was scared I'd need coding knowledge. But Sitestacker built everything! My website was ready in less than a day. Customers trust me more now. Best ₹999 I spent!"</p>
         <div class="flex items-center gap-3">
           <img src="https://images.unsplash.com/photo-1567532939604-b6b5b0db2604?w=48&h=48&fit=crop&q=80" alt="Fatima" class="w-10 h-10 rounded-full object-cover" />
           <div>
@@ -616,12 +753,20 @@
   <div class="max-w-2xl mx-auto text-center reveal">
     <div class="inline-block text-4xl mb-5">🚀</div>
     <h2 class="font-display font-900 text-4xl sm:text-5xl text-brand-ink mb-4">Ready to grow your store?</h2>
-    <p class="text-brand-muted text-lg mb-8">Join 50+ sellers who already have a professional website. Your website is one DM away.</p>
-    <a href="https://wa.me/918433080066?text=Hi%20I%20want%20to%20get%20my%20website%20from%20Sitestacker" target="_blank"
-       class="inline-flex items-center gap-3 bg-brand-green text-white font-bold px-10 py-5 rounded-2xl hover:bg-brand-darkgreen transition-colors text-lg shadow-2xl shadow-green-200">
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
-      DM WEBSITE
-    </a>
+    <p class="text-brand-muted text-lg mb-3">Join 50+ sellers who already have a professional website. Your website is one DM away.</p>
+    <p class="text-brand-ink font-semibold text-sm mb-8">Just send your products — we handle everything. <span class="text-brand-accent">Limited slots available this week.</span></p>
+    <div class="flex flex-col sm:flex-row gap-3 justify-center">
+      <a href="https://wa.me/918433080066?text=Hi%20I%20want%20to%20get%20my%20website%20from%20Sitestacker" target="_blank"
+         class="inline-flex items-center justify-center gap-3 bg-brand-green text-white font-bold px-9 py-4 rounded-xl hover:bg-brand-darkgreen transition-colors text-base shadow-2xl shadow-green-200">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+        DM on WhatsApp
+      </a>
+      <a href="https://shadowrexx.github.io/Demo/"
+         class="inline-flex items-center justify-center gap-2 bg-brand-ink text-white font-semibold px-9 py-4 rounded-xl hover:bg-gray-900 transition-colors text-base">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+        View Demo
+      </a>
+    </div>
     <p class="mt-5 text-sm text-brand-muted">Usually responds within 30 minutes · Mon–Sat 9am–9pm</p>
   </div>
 </section>
@@ -637,7 +782,7 @@
     </div>
     <p class="text-gray-500 text-sm">© 2024 Sitestacker. Made with ❤️ for Indian sellers.</p>
     <div class="flex items-center gap-4">
-      <a href="https://instagram.com/Sitestacker.tech" target="_blank"
+      <a href="https://instagram.com/sitestacker.in" target="_blank"
          class="w-9 h-9 bg-white/10 rounded-xl flex items-center justify-center hover:bg-white/20 transition-colors">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
       </a>
